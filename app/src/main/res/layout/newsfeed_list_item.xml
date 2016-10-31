@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/newsfeed_list_item_height" >
+
+    <!-- TODO: Finish formatting the list rows-->
+    <ImageView
+        android:id="@+id/newsfeed_list_item_image"
+        android:layout_width="380dp"
+        android:layout_height="228dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sample_image"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <TextView
+        android:id="@+id/newsfeed_list_item_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newsfeed_list_item_image"
+        android:layout_alignLeft="@id/newsfeed_list_item_image"
+        android:textSize="8sp"
+        android:text="POLITICS"/>
+
+    <ImageView
+        android:id="@+id/newsfeed_list_item_icon"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/guardian_icon"
+        android:layout_below="@id/newsfeed_list_item_image"
+        android:layout_toRightOf="@id/newsfeed_list_item_section"
+        android:layout_alignTop="@id/newsfeed_list_item_section"
+        android:layout_alignBottom="@id/newsfeed_list_item_section"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"/>
+
+    <TextView
+        android:id="@+id/newsfeed_list_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 Jun, 2016"
+        android:textSize="8sp"
+        android:layout_below="@id/newsfeed_list_item_image"
+        android:layout_toRightOf="@id/newsfeed_list_item_icon"/>
+
+    <TextView
+        android:id="@+id/newsfeed_list_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Charlie Haden Liberation Music Orchestra: Time/Life review – bandleader's final, moving words"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:ellipsize="marquee"
+        android:maxLines="2"
+        android:layout_alignLeft="@id/newsfeed_list_item_image"
+        android:layout_alignRight="@id/newsfeed_list_item_image"
+        android:layout_below="@id/newsfeed_list_item_section"/>
+
+    <TextView
+        android:id="@+id/newsfeed_list_item_contributor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="by Polly Toynbee"
+        android:textSize="8sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/newsfeed_list_item_title"
+        android:layout_alignLeft="@id/newsfeed_list_item_image"
+        />
+
+</RelativeLayout>
